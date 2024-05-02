@@ -1,0 +1,338 @@
+header{
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+header li a{
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+    transition: color .2s ease-in;
+}
+
+header li a:visited{
+    color: hsl(243, 87%, 12%);
+}
+
+header li a:hover{
+    color: hsl(224, 93%, 58%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.vantagem1{
+    margin: 0 80px 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.vantagem1 img, .vantagem1 .texto-vantagem1, .vantagem2 > img, .vantagem2 .texto-vantagem2{
+    width: 50%;
+}
+
+h2{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    color: hsl(243, 87%, 12%);
+    line-height: 60px;
+}
+
+.texto-vantagem1 p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin: 15px 0 20px;
+    color: hsl(243, 87%, 12%);
+}
+
+.texto-vantagem1 form{
+    display: flex;
+    gap: 15px;
+}
+
+.texto-vantagem1 input[type='email']{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    width: 50%;
+    height: 42px;
+    padding: 0 20px;
+    border: 1px solid hsl(243, 87%, 12%);
+    border-radius: 3px;
+}
+
+.texto-vantagem1 input[type='email']:focus{
+    outline: none;
+}
+
+.texto-vantagem1 button[type='submit']{
+    font-family: 'Raleway';
+    font-weight: 700;
+    width: 35%;
+    height: 42px;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
+    box-shadow: 2px 2px 10px hsl(0, 0%, 75%);
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+}
+
+.texto-vantagem1 button[type='submit']:hover{
+    background-color: hsl(221, 100%, 71%);
+}
+
+.efeito-vantagem2{
+    background-image: url('../images/bg-curve-desktop.svg');
+    background-size: cover;
+    min-height: 114px;
+}
+
+.vantagem2{
+    background-color: hsl(240, 75%, 98%);
+    padding: 50px 80px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.texto-vantagem2 > p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin: 20px 0 15px;
+    color: hsl(243, 87%, 12%);
+}
+
+.texto-vantagem2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 170px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.texto-vantagem2 a:visited{
+    color: hsl(170, 45%, 43%);
+}
+
+.texto-vantagem2 a:hover{
+    color: hsl(168, 62%, 68%);
+    border-bottom: 1px solid hsl(168, 62%, 68%);
+}
+
+.texto-vantagem2 a:hover .seta-para-direita{
+    display: none;
+}
+
+.texto-vantagem2 a:hover .seta-para-direita + .seta-para-direita-hover{
+    display: inline-block;
+}
+
+.seta-para-direita-hover{
+    display: none;
+}
+
+.testemunho{
+    margin-top: 50px;
+    padding: 30px 35px;
+    width: 50%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px hsl(0, 0%, 75%);
+}
+
+.testemunho > p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin: 10px 0 15px;
+    color: hsl(243, 87%, 12%);
+}
+
+.identificacao-testemunho{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.identificacao-testemunho img{
+    width: 35px;
+    border-radius: 50%;
+}
+
+.nome-cargo-testemunho{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.nome-cargo-testemunho h4{
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: hsl(243, 87%, 12%);
+}
+
+.nome-cargo-testemunho span{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 10px;
+    color: hsl(243, 87%, 12%);
+}
+
+.acesso-antecipado{
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    padding: 20px 80px 0;
+    min-height: 320px;
+    background-color: hsl(238, 22%, 44%);
+}
+
+.texto-acesso-antecipado, .acesso-antecipado form{
+    width: 50%;
+}
+
+.texto-acesso-antecipado h3{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(240, 75%, 98%);
+    line-height: 60px;
+}
+
+.texto-acesso-antecipado p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0 15px;
+    color: hsl(240, 75%, 98%);
+}
+
+.acesso-antecipado form input[type='email']{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    width: 90%;
+    height: 42px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border: 1px solid hsl(238, 22%, 44%);
+    box-shadow: 2px 2px 10px hsl(240, 22%, 42%);
+    border-radius: 3px;
+}
+
+.acesso-antecipado form input[type='email']:focus{
+    outline: none;
+}
+
+.acesso-antecipado form button[type='submit']{
+    font-family: 'Raleway';
+    font-weight: 700;
+    width: 40%;
+    height: 42px;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
+    box-shadow: 2px 2px 10px hsl(240, 22%, 42%);
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+}
+
+.acesso-antecipado form button[type='submit']:hover{
+    background-color: hsl(221, 100%, 71%);
+}
+
+.informacoes-gerais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 80px 40px;
+    background-color: hsl(243, 87%, 12%);
+}
+
+.informacoes-gerais > img{
+    width: 166px;
+}
+
+.container-informacoes-gerais{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-informacoes-gerais li, .container-informacoes-gerais li a{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: hsl(240, 75%, 98%);
+    transition: color .2s ease-in;
+}
+
+.container-informacoes-gerais li a:hover{
+    color: hsl(238, 22%, 44%);
+}
+
+.contatos li img{
+    margin-right: 15px;
+}
+
+.redes-sociais{
+    display: flex;
+    height: 50px;
+    gap: 20px;
+}
+
+.redes-sociais li{
+    border: 1px solid hsl(240, 75%, 98%);
+    border-radius: 50%;
+}
+
+.redes-sociais img{
+    width: 28px;
+}
+
+footer{
+    padding: 5px 0;
+    background-color: hsl(0, 0%, 75%);
+}
+
+.attribution{ 
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.attribution a{ 
+    color: hsl(243, 87%, 12%); 
+}
+
+.attribution a:visited{ 
+    color: hsl(243, 87%, 12%); 
+}
+
+.attribution a:hover{
+    text-decoration: none;
+}

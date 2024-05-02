@@ -4,7 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Fonte Raleway - pesos usados: 400 e 700 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Fonte Open Sans - peso usado: 400 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
@@ -42,6 +55,7 @@
         </form>
       </div>
     </section>
+    <div class="efeito-vantagem2"></div>
     <section class="vantagem2">
       <img src="./src/images/illustration-2.svg" alt="Image of a illustration">
       <div class="texto-vantagem2">
@@ -54,7 +68,7 @@
           Securely share files and folders with friends, family and colleagues for
           live collaboration. No email attachments required!
         </p>
-        <a href="#">See how Fylo works <img src="./src/images/icon-arrow.svg" alt="Icon of a right arrow"></a> <!-- colocar uma borda embaixo? -->
+        <a href="#">See how Fylo works <img class="seta-para-direita" src="./src/images/icon-arrow.svg" alt="Icon of a right arrow"><img class="seta-para-direita-hover" src="./src/images/icon-arrow-hover.svg" alt="Icon of a right arrow"></a>
         <section class="testemunho">
           <img src="./src/images/icon-quotes.svg" alt="Icon of a quotes">
           <p>
@@ -101,21 +115,21 @@
         </li>
       </ul>
       <ul class="sobre-nos">
-        <li>About Us</li>
-        <li>Jobs</li>
-        <li>Press</li>
-        <li>Blog</li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
       </ul>
       <ul class="termos-privacidade">
-        <li>Contact Us</li>
-        <li>Terms</li>
-        <li>Privacy</li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
       </ul>
-      <section class="redes-sociais">
-        <img src="./src/images/logo-facebook.png" alt="Facebook's logo">
-        <img src="./src/images/logo-twitter.png" alt="Twitter's logo">
-        <img src="./src/images/logo-instagram.png" alt="Instagram's logo">
-      </section>
+      <ul class="redes-sociais">
+        <li><a href="#"><img src="./src/images/logo-facebook.png" alt="Facebook's logo"></a></li>
+        <li><a href="#"><img src="./src/images/logo-twitter.png" alt="Twitter's logo"></a></li>
+        <li><a href="#"><img src="./src/images/logo-instagram.png" alt="Instagram's logo"></a></li>
+      </ul>
     </div>
   </section>
 
