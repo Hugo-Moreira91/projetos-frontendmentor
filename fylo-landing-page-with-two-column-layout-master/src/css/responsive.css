@@ -1,0 +1,177 @@
+@media (max-width: 1024px){
+    h2{
+        font-size: 38px;
+    }
+
+    .texto-vantagem1 form{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .container-input-texto-vantagem1{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-input-texto-vantagem1 input[type='email'], .texto-vantagem1 button[type='submit']{
+        width: 95%;
+    }
+
+    .testemunho{
+        width: 90%;
+        margin: 50px auto 0;
+    }
+
+    .texto-acesso-antecipado h3{
+        font-size: 30px;
+    }
+
+    .acesso-antecipado form button[type='submit']{
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px){
+    .vantagem1, .vantagem2{
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .vantagem1{
+        margin: 0 80px 120px;
+    }
+
+    .vantagem1 img, .vantagem1 .texto-vantagem1, .vantagem2 > img, .vantagem2 .texto-vantagem2{
+        width: 70%;
+    }
+
+    h2, .texto-vantagem1 p{
+        text-align: center;
+    }
+
+    .texto-vantagem1 h2{
+        font-size: 42px;
+    }
+
+    .texto-vantagem2 h2{
+        font-size: 30px;
+    }
+
+    .texto-vantagem2 a{
+        margin: 35px auto 0;
+    }
+
+    .acesso-antecipado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 100px 0;
+        min-height: 320px;
+        background-color: hsl(238, 22%, 44%);
+    }
+
+    .texto-acesso-antecipado, .acesso-antecipado form{
+        width: 60%;
+    }
+
+    .texto-acesso-antecipado h3, .texto-acesso-antecipado p, .acesso-antecipado form{
+        text-align: center;
+    }
+
+    .acesso-antecipado form input[type='email'], .acesso-antecipado form button[type='submit']{
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px){
+    .efeito-vantagem2{
+        background-image: url('../images/bg-curve-mobile.svg');
+        background-size: cover;
+        min-height: 114px;
+    }
+
+    .container-informacoes-gerais{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .redes-sociais{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        padding: 0 25px;
+    }
+
+    header ul{
+        gap: 25px;
+    }
+
+    .vantagem1{
+        margin: 0 25px 120px;
+    }
+
+    .vantagem1 img, .vantagem1 .texto-vantagem1, .vantagem2 > img, .vantagem2 .texto-vantagem2{
+        width: 90%;
+    }
+
+    .texto-vantagem1 input[type='email'], .texto-vantagem1 button[type='submit']{
+        width: 85%;
+    }
+
+    .vantagem2{
+        padding: 50px 25px 100px;
+    }
+}
+
+@media (max-width: 500px){
+    header{
+        padding: 0 15px;
+    }
+
+    header ul{
+        gap: 10px;
+    }
+
+    .vantagem1{
+        margin: 0 15px 120px;
+    }
+
+    .vantagem1 img, .vantagem1 .texto-vantagem1, .vantagem2 > img, .vantagem2 .texto-vantagem2{
+        width: 90%;
+    }
+
+    .texto-vantagem1 input[type='email'], .texto-vantagem1 button[type='submit']{
+        width: 85%;
+    }
+
+    .vantagem2{
+        padding: 50px 15px 100px;
+    }
+
+    .texto-vantagem2 h2{
+        font-size: 17px;
+    }
+
+    .texto-acesso-antecipado, .acesso-antecipado form{
+        width: 85%;
+    }
+
+    .informacoes-gerais{
+        padding: 80px 40px 40px;
+    }
+}
+
+@media (max-width: 450px){
+    header img{
+        width: 120px;
+    }
+
+    .texto-acesso-antecipado h3{
+        font-size: 26px;
+    }
+}

@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
@@ -40,8 +41,11 @@
           Access them wherever you need, share and collaborate with friends,
           family, and co-workers.
         </p>
-        <form action="#" method="get">
-          <input type="email" name="email-usuario" id="email-usuario" placeholder="Enter your email...">
+        <form id="formulario1" action="#" method="get">
+          <div class="container-input-texto-vantagem1">
+            <input class="input1" type="email" name="email-usuario" id="email-usuario1" placeholder="Enter your email...">
+            <span class="erro-email-texto-vantagem1"></span>
+          </div>
           <button type="submit">Get Started</button>
         </form>
       </div>
@@ -86,8 +90,11 @@
         If you have any questions, our support team would be happy to help you.
       </p>
     </div>
-    <form action="#" method="get">
-      <input type="email" name="email-usuario" id="email-usuario" placeholder="email@example.com">
+    <form id="formulario2" action="#" method="get">
+      <div class="container-input-acesso-antecipado">
+        <input class="input2" type="email" name="email-usuario" id="email-usuario2" placeholder="email@example.com">
+        <span class="erro-email-texto-acesso-antecipado"></span>
+      </div>
       <button type="submit">Get Started For Free</button>
     </form>
   </section>
@@ -130,5 +137,7 @@
       Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank">Hugo César</a>.
     </p>
   </footer>
+
+  <script src="./src/js/index.js"></script>
 </body>
 </html>
