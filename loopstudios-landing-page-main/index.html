@@ -2,58 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Fonte Alata com peso 400 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+  <!-- Fonte Josefin Sans com peso 300 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  -->
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <header class="cabecalho-principal">
+    <div class="header-container">
+      <img class="logo" src="./src/images/logo.svg" alt="Website's logo">
+      <img class="menu-hamburguer" src="./src/images/icon-hamburger.svg" alt="Icon of a hamburguer menu">
+      <nav>
+        <ul class="menu-desktop">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <ul class="menu-mobile">
+          <img class="logo-menu-mobile" src="./src/images/logo.svg" alt="Website's logo">
+          <img class="fechar-menu-mobile" src="./src/images/icon-close.svg" alt="Icon of a close menu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="titulo-cabecalho">
+      <h1>Immersive<br>experiences<br>that deliver</h1>
+    </div>
+  </header>
 
-  Immersive experiences that deliver
+  <main>
+    <section class="sessao-sobre">
+      <img src="./src/images/desktop/image-interactive.jpg" alt="Image of a man with a VR">
+      <div class="texto-sobre">
+        <h2>The leader in interactive VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.
+        </p>
+      </div>
+    </section>
+    <section class="sessao-criacoes">
+      <header class="cabecalho-sessao-criacoes"> <!-- display flex com justify-content = space-between -->
+        <h2>Our creations</h2>
+        <a href="#">See all</a> <!-- aplicar a propriedade order = 2 na versão mobile para o botão ficar abaixo do grid -->
+      </header>
+      <main class="grid-container"> <!-- display grid com duas linhas e quatro colunas -->
+        <div class="grid-item">
+          <div class="grid-conteudo">
+            <h3>Deep<br>earth</h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-conteudo">
+            <h3>Night<br>arcade</h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-conteudo">
+            <h3>Soccer<br>team VR</h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-conteudo">
+            <h3>The<br>grid</h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-conteudo">
+            <h3>From up<br>above VR</h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-conteudo">
+            <h3>Pocket<br>borealis</h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-conteudo">
+            <h3>The<br>curiosity</h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-conteudo">
+            <h3>Make it<br>fisheye</h3>
+          </div>
+        </div>
+      </main>
+    </section>
+  </main>
 
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="logo-redes-sociais"> <!-- display flex com justify-content = space-between -->
+      <img class="logo-footer" src="./src/images/logo.svg" alt="Website's logo">
+      <div class="redes-sociais">
+        <img src="./src/images/icon-facebook.svg" alt="Facebook's logo">
+        <img src="./src/images/icon-x.svg" alt="Twitter's logo">
+        <img src="./src/images/icon-pinterest.svg" alt="Pinterest's logo">
+        <img src="./src/images/icon-instagram.svg" alt="Instagram's logo">
+      </div>
+    </div>
+    <div class="menu-copyright-footer"> <!-- display flex com justify-content = space-between -->
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+      <span>© 2021 Loopstudios. All rights reserved.</span>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank">Hugo César</a>.
+    </div>
+  </footer>
 </body>
 </html>

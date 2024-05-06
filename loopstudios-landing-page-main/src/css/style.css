@@ -1,0 +1,82 @@
+.cabecalho-principal{
+    display: flex;
+    flex-direction: column;
+    background: hsl(268, 59%, 49%) url('../images/desktop/image-hero.jpg') center center/cover no-repeat;
+    min-height: 650px;
+    padding: 0 120px;
+}
+
+.cabecalho-principal::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 650px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho-principal .header-container, .cabecalho-principal h1{
+    z-index: 1;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+}
+
+.menu-hamburguer, .menu-mobile{
+    display: none;
+}
+
+.menu-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu-desktop a{
+    position: relative;
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+.menu-desktop a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 2px;
+    background-color: hsl(0, 0%, 100%);
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+
+.menu-desktop a:hover::after{
+    opacity: 1;
+}
+
+.titulo-cabecalho{
+    display: flex;
+    align-items: center;
+    min-height: calc(650px - 150px);
+}
+
+.cabecalho-principal h1{
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 70px;
+    text-transform: uppercase;
+    padding: 35px 115px 35px 40px;
+    color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 100%);
+}
