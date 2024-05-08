@@ -1,0 +1,75 @@
+@media (max-width: 1300px){
+    .grid-container{
+        grid-template-rows: repeat(4, 450px);
+        grid-template-columns: repeat(2, 256px);
+        column-gap: 28px;
+        row-gap: 28px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1064px){
+    .container-principal{
+        gap: 120px;
+    }
+
+    .sessao-sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .texto-sobre{
+        position: initial;
+        text-align: center;
+        padding: 0 80px;
+    }
+
+    .sessao-criacoes{
+        gap: 80px;
+    }
+}
+
+@media (max-width: 950px){
+    .cabecalho-principal{
+        padding: 0 60px;
+    }
+
+    .menu-desktop{
+        gap: 25px;
+    }
+
+    .logo-redes-sociais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .logo-footer{
+        width: auto;
+        height: auto;
+    }
+
+    .menu-copyright-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .menu-copyright-footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        gap: 35px;
+    }
+}
+
+@media (max-width: 830px){
+    
+}
