@@ -247,6 +247,32 @@
     color: hsl(0, 0%, 0%);
 }
 
+.botao-versao-mobile{
+    display: none;
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 18px;
+    width: auto;
+    margin: auto;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 50px;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 0%);
+    transition: color .4s ease-in-out, background-color .4s ease-in-out;
+}
+
+.botao-versao-mobile:visited{
+    color: hsl(0, 0%, 0%);
+}
+
+.botao-versao-mobile:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+}
+
 footer{
     display: flex;
     flex-direction: column;

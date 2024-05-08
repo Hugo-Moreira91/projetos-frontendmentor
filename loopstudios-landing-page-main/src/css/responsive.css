@@ -70,6 +70,34 @@
     }
 }
 
-@media (max-width: 830px){
+@media (max-width: 850px){
+    .container-principal{
+        margin: 120px 0;
+    }
+
+    .cabecalho-sessao-criacoes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho-sessao-criacoes a{
+        display: none;
+    }
+
+    .sessao-criacoes{
+        gap: 0;
+    }
+
+    .grid-container{
+        margin: 60px auto 50px;
+    }
+
+    .botao-versao-mobile{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px){
     
 }
