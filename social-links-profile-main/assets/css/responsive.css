@@ -1,0 +1,13 @@
+@media(max-width: 425px){
+    .principal{
+        width: 90%;
+    }
+
+    .redes-sociais{
+        width: 115%;
+    }
+
+    .attribution{
+        font-size: 11px;
+    }
+}
