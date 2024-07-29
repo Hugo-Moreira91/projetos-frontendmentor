@@ -83,6 +83,7 @@ main{
 .question{
     font-family: "WorkSansSemiBold", sans-serif;
     font-size: 1.8rem;
+    text-align: left;
 }
 
 .open-answer{

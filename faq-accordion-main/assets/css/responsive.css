@@ -1,0 +1,44 @@
+@media(max-width: 670px){
+    .faq-container{
+        width: 87%;
+    }
+}
+
+@media(max-width: 450px){
+    body{
+        background-image: url(../images/background-pattern-mobile.svg);
+    }
+
+    .faq-container{
+        padding: 24px;
+        border-radius: 8px;
+    }
+
+    .title{
+        gap: 23px;
+        font-size: 3.2rem;
+        margin-bottom: 23px;
+    }
+
+    .title .star{
+        width: 2.5rem;
+    }
+
+    .acordion-list{
+        margin-bottom: 18px;
+    }
+
+    .question{
+        width: 80%;
+        font-size: 1.6rem;
+    }
+
+    .answer{
+        margin-top: 26px;
+        line-height: 21px;
+    }
+
+    .answer .text{
+        font-size: 1.4rem;
+    }
+}
