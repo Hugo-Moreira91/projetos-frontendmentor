@@ -12,13 +12,13 @@
     font-style: normal;
 }
 
-body{
+body {
     font-family: "KarlaRegular";
     font-size: 1.6rem;
     background-color: var(--bg-body-color);
 }
 
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,37 +26,38 @@ main{
     position: relative;
 }
 
-.form-container{
+.form-container {
     width: 735px;
     padding: 40px;
     border-radius: 15px;
     background-color: var(--bg-form-color);
 }
 
-.title-contact{
+.title-contact {
     font-family: "KarlaBold";
     font-size: 3rem;
     margin-bottom: 30px;
     color: var(--text-color);
 }
 
-.name-inputs{
+.name-inputs {
     display: flex;
     justify-content: space-between;
 }
 
-.label{
+.label {
     display: block;
     margin-bottom: 12px;
     color: var(--text-color);
 }
 
-.asterisk{
+.asterisk {
     margin-left: 5px;
     color: var(--active-color);
 }
 
-input[type="text"], input[type="email"]{
+input[type="text"],
+input[type="email"] {
     font-family: "KarlaRegular";
     font-size: 1.6rem;
     line-height: 24px;
@@ -64,38 +65,71 @@ input[type="text"], input[type="email"]{
     margin-bottom: 25px;
     border-radius: 8px;
     border: 1px solid var(--text-color);
+    cursor: pointer;
 }
 
-input[type="text"]{
+input[type="text"] {
     width: 320px;
 }
 
-input[type="email"]{
+input[type="email"] {
     width: 100%;
 }
 
-.query-radio{
+.query-radio {
     margin-bottom: 25px;
 }
 
-.query-radio .label{
+.query-radio .label {
     margin-bottom: 20px;
 }
 
-.radio-container{
+.radio-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 18px;
 }
 
-.custom-radio{
+.custom-radio {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
     width: 320px;
     padding: 15px 24px;
     border-radius: 8px;
     border: 1px solid var(--text-color);
+    cursor: pointer;
 }
 
-textarea{
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+.custom-radio .radio-icon {
+    width: 19px;
+    height: 19px;
+    margin-right: 18px;
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 50%;
+    position: relative;
+}
+
+.custom-radio .radio-icon::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-radio input[type="radio"]:checked + .radio-icon::after {
+    background: url(../images/icon-radio-selected.svg) no-repeat center center / contain;
+}
+
+textarea {
     width: 100%;
     resize: none;
     font-family: "KarlaRegular";
@@ -105,36 +139,78 @@ textarea{
     margin-bottom: 6px;
     border-radius: 8px;
     border: 1px solid var(--text-color);
+    cursor: pointer;
 }
 
-.checkbox-container{
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--active-color);
+}
+
+.checkbox-container {
     margin-top: 33px;
 }
 
-.custom-checkbox{
-    display: block;
+.custom-checkbox {
+    display: flex;
+    align-items: center;
     margin-bottom: 13px;
+    cursor: pointer;
 }
 
-.require-msg-textarea{
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkbox-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 3px;
+    position: relative;
+}
+
+.custom-checkbox .checkbox-icon::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-icon::after {
+    background: url(../images/icon-checkbox-check.svg) no-repeat center center / contain;
+}
+
+.require-msg-textarea {
     display: none;
     margin-bottom: 45px;
     color: var(--error-color);
 }
 
-.require-msg, .valid-msg, .query-msg{
+.require-msg,
+.valid-msg,
+.query-msg {
     display: none;
     margin-bottom: 28px;
     color: var(--error-color);
 }
 
-.consent-msg{
+.consent-msg {
     display: none;
     margin-bottom: 13px;
     color: var(--error-color);
 }
 
-.btn-submit{
+.btn-submit {
     font-family: "KarlaRegular";
     font-size: 1.8rem;
     width: 100%;
@@ -148,11 +224,11 @@ textarea{
     transition: .4s ease-in-out;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
     background-color: var(--btn-hover-color);
 }
 
-.success-send{
+.success-send {
     display: none;
     position: absolute;
     top: 3%;
@@ -164,7 +240,7 @@ textarea{
     background-color: var(--text-color);
 }
 
-.title-success{
+.title-success {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -175,29 +251,29 @@ textarea{
     color: var(--bg-form-color);
 }
 
-.thanks-msg{
+.thanks-msg {
     font-family: "KarlaRegular";
     font-size: 1.6rem;
     color: var(--bg-body-color);
 }
 
-footer{
+footer {
     text-align: center;
     padding: 5px 0;
     background-color: var(--text-color);
     color: var(--bg-form-color);
 }
 
-.attribution{ 
-    font-size: 1.1rem; 
+.attribution {
+    font-size: 1.1rem;
     letter-spacing: .8px;
 }
 
-.attribution a{ 
-    color: var(--bg-body-color); 
+.attribution a {
+    color: var(--bg-body-color);
 }
 
-.attribution a:hover{
+.attribution a:hover {
     text-decoration: none;
 }
 
