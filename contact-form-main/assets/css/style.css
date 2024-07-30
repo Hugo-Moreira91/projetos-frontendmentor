@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "KarlaRegular";
+    src: url(../fonts/static/Karla-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "KarlaBold";
+    src: url(../fonts/static/Karla-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    font-family: "KarlaRegular";
+    font-size: 1.6rem;
+    background-color: var(--bg-body-color);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 115vh;
+    position: relative;
+}
+
+.form-container{
+    width: 735px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: var(--bg-form-color);
+}
+
+.title-contact{
+    font-family: "KarlaBold";
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.name-inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.label{
+    display: block;
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.asterisk{
+    margin-left: 5px;
+    color: var(--active-color);
+}
+
+input[type="text"], input[type="email"]{
+    font-family: "KarlaRegular";
+    font-size: 1.6rem;
+    line-height: 24px;
+    padding: 15px 24px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+}
+
+input[type="text"]{
+    width: 320px;
+}
+
+input[type="email"]{
+    width: 100%;
+}
+
+.query-radio{
+    margin-bottom: 25px;
+}
+
+.query-radio .label{
+    margin-bottom: 20px;
+}
+
+.radio-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.custom-radio{
+    width: 320px;
+    padding: 15px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    font-family: "KarlaRegular";
+    font-size: 1.6rem;
+    line-height: 24px;
+    padding: 15px 24px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+}
+
+.checkbox-container{
+    margin-top: 33px;
+}
+
+.custom-checkbox{
+    display: block;
+    margin-bottom: 13px;
+}
+
+.require-msg-textarea{
+    display: none;
+    margin-bottom: 45px;
+    color: var(--error-color);
+}
+
+.require-msg, .valid-msg, .query-msg{
+    display: none;
+    margin-bottom: 28px;
+    color: var(--error-color);
+}
+
+.consent-msg{
+    display: none;
+    margin-bottom: 13px;
+    color: var(--error-color);
+}
+
+.btn-submit{
+    font-family: "KarlaRegular";
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 18px 0;
+    margin-top: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--active-color);
+    color: var(--bg-form-color);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.btn-submit:hover{
+    background-color: var(--btn-hover-color);
+}
+
+.success-send{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+    width: 450px;
+    padding: 25px 24px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+}
+
+.title-success{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "KarlaBold";
+    font-size: 1.6rem;
+    letter-spacing: 1.1px;
+    margin-bottom: 15px;
+    color: var(--bg-form-color);
+}
+
+.thanks-msg{
+    font-family: "KarlaRegular";
+    font-size: 1.6rem;
+    color: var(--bg-body-color);
+}
+
+footer{
+    text-align: center;
+    padding: 5px 0;
+    background-color: var(--text-color);
+    color: var(--bg-form-color);
+}
+
+.attribution{ 
+    font-size: 1.1rem; 
+    letter-spacing: .8px;
+}
+
+.attribution a{ 
+    color: var(--bg-body-color); 
+}
+
+.attribution a:hover{
+    text-decoration: none;
+}
+
+/* Falta criar as classes de visível para as mensagens em caso de erro/campo vazio; foco dos inputs; e os radio e checkbox */

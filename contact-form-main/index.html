@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/variables.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <main> <!-- usar position: relative -->
+    <section class="form-container">
+      <h1 class="title-contact">Contact Us</h1>
+      <form id="form-contact" action="#" method="post" autocomplete="on">
+        <div class="name-inputs"> <!-- aplicar display: flex c/ flex-direction: row no desktop; column no mobile -->
+          <div class="first-name-container">
+            <label class="label" for="first-name">First Name <span class="asterisk">*</span></label>
+            <!-- aplicar display: block nos labels-->
+            <input type="text" name="first-name" id="first-name">
+            <p class="require-msg">This field is required</p>
+          </div>
+          <div class="last-name-container">
+            <label class="label" for="last-name">Last Name <span class="asterisk">*</span></label>
+            <input type="text" name="last-name" id="last-name">
+            <p class="require-msg">This field is required</p>
+          </div>
+        </div>
+
+        <label class="label" for="email-user">Email Address <span class="asterisk">*</span></label>
+        <input type="email" name="email-user" id="email-user">
+        <p class="valid-msg">Please enter a valid email address</p>
+        <p class="require-msg">This field is required</p>
+
+        <div class="query-radio">
+          <label class="label">Query Type <span class="asterisk">*</span></label>
+          <div class="radio-container">
+            <label class="custom-radio">
+              <input type="radio" name="query-type" id="general-enquiry">
+              <span class="radio-icon"></span>
+              General Enquiry
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="query-type" id="support-request">
+              <span class="radio-icon"></span>
+              Support Request
+            </label>
+          </div>
+          <p class="query-msg">Please select a query type</p>
+        </div>
+
+        <label class="label" for="message-user">Message <span class="asterisk">*</span></label>
+        <textarea name="message-user" id="message-user" rows="3"></textarea>
+        <p class="require-msg-textarea">This field is required</p>
+
+        <div class="checkbox-container">
+          <label class="custom-checkbox">
+            <input type="checkbox" name="consent-user" id="consent-user">
+            <span class="checkbox-icon"></span>
+            I consent to being contacted by the team
+          </label>
+          <p class="consent-msg">To submit this form, please consent to being contacted</p>
+        </div>
+
+        <button class="btn-submit" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <div class="success-send">
+      <h2 class="title-success">
+        <img src="./assets/images/icon-success-check.svg" alt="">
+        Message Sent!
+      </h2>
+      <p class="thanks-msg">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank">Hugo Moreira</a>.
+    </div>
+  </footer>
+</body>
+
+</html>

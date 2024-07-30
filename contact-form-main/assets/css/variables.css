@@ -1,0 +1,9 @@
+:root{
+    --bg-body-color: hsl(148, 38%, 91%);
+    --bg-form-color: hsl(0, 0%, 100%);
+    --box-shadow-color: hsl(186, 15%, 59%);
+    --active-color: hsl(169, 82%, 27%);
+    --error-color: hsl(0, 66%, 54%);
+    --text-color: hsl(187, 24%, 22%);
+    --btn-hover-color: hsl(171, 83%, 14%);
+}
