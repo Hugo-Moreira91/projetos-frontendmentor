@@ -5,13 +5,12 @@ const inputsRadio = document.querySelectorAll('input[type="radio"]');
 const inputTextArea = document.querySelector('textarea');
 const inputCheckbox = document.querySelector('input[type="checkbox"]');
 
-console.log(inputsRadio);
-
 const requireMessage = document.querySelectorAll('.require-msg');
 const requireMessageTxtArea = document.querySelector('.require-msg-textarea');
 const validMessage = document.querySelector('.valid-msg');
 const queryMessage = document.querySelector('.query-msg');
 const consentMessage = document.querySelector('.consent-msg');
+const successMessage = document.querySelector('.success-send');
 
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -74,6 +73,12 @@ form.addEventListener('submit', (event)=>{
     }
 
     if(!validForm){
+        event.preventDefault();
+    }else{
+        successMessage.classList.add('visible');
+        setTimeout(() => {
+            successMessage.classList.remove('visible');
+        }, 5000);
         event.preventDefault();
     }
 });

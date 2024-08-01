@@ -281,7 +281,8 @@ footer {
 .valid-msg.visible,
 .query-msg.visible,
 .require-msg-textarea.visible,
-.consent-msg.visible{
+.consent-msg.visible,
+.success-send.visible{
     display: block;
 }
 
