@@ -230,7 +230,7 @@ textarea:focus {
 
 .success-send {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 3%;
     left: 50%;
     transform: translate(-50%, -3%);
@@ -277,4 +277,16 @@ footer {
     text-decoration: none;
 }
 
-/* Falta criar as classes de visível para as mensagens em caso de erro/campo vazio; foco dos inputs; e os radio e checkbox */
+.require-msg.visible,
+.valid-msg.visible,
+.query-msg.visible,
+.require-msg-textarea.visible,
+.consent-msg.visible{
+    display: block;
+}
+
+input[type="text"].error,
+input[type="email"].error,
+textarea.error{
+    border: 1px solid var(--error-color);
+}

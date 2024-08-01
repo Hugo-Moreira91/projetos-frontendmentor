@@ -12,17 +12,17 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/variables.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
-  <main> <!-- usar position: relative -->
+  <main>
     <section class="form-container">
       <h1 class="title-contact">Contact Us</h1>
       <form id="form-contact" action="#" method="post" autocomplete="on">
         <div class="name-inputs"> <!-- aplicar display: flex c/ flex-direction: row no desktop; column no mobile -->
           <div class="first-name-container">
             <label class="label" for="first-name">First Name <span class="asterisk">*</span></label>
-            <!-- aplicar display: block nos labels-->
             <input type="text" name="first-name" id="first-name">
             <p class="require-msg">This field is required</p>
           </div>
@@ -74,7 +74,7 @@
 
     <div class="success-send">
       <h2 class="title-success">
-        <img src="./assets/images/icon-success-check.svg" alt="">
+        <img src="./assets/images/icon-success-check.svg" alt="Success icon">
         Message Sent!
       </h2>
       <p class="thanks-msg">Thanks for completing the form. We'll be in touch soon!</p>
@@ -88,6 +88,8 @@
       Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank">Hugo Moreira</a>.
     </div>
   </footer>
+
+  <script src="./assets/js/form-validation.js"></script>
 </body>
 
 </html>

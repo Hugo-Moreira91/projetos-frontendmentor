@@ -1,0 +1,53 @@
+@media(max-width: 1400px){
+    main{
+        min-height: 160vh;
+    }
+}
+
+@media(max-width: 1200px){
+    main{
+        min-height: 100vh;
+    }
+}
+
+@media(max-width: 450px){
+    main{
+        min-height: 140vh;
+    }
+
+    .form-container{
+        width: 92%;
+        padding: 23px;
+    }
+
+    .name-inputs{
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .radio-container{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .custom-radio{
+        width: 100%;
+    }
+
+    textarea{
+        height: 240px;
+    }
+
+    .success-send{
+        width: 92%;
+    }
+}
+
+@media(max-width: 375px){
+    main{
+        min-height: 173vh;
+    }
+}
